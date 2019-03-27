@@ -10,7 +10,7 @@ Public Class ClassMonitoreoDeCarpeta
         Try
             'se procede a conectarse a eContent.
             objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Se realizo la conexion a eContent.", ClassGeneradorLog.tipoLog.LogEjecucion)
-            objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Usuario: " + objSingleton.objLibreria.ActiveUser.ID, ClassGeneradorLog.tipoLog.LogEjecucion)
+            'objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Usuario: " + objSingleton.objLibreria.ActiveUser.ID, ClassGeneradorLog.tipoLog.LogEjecucion)
 
             Dim objIDM As Object
             Dim objCarpeta As New IDMObjects.Folder
@@ -20,7 +20,7 @@ Public Class ClassMonitoreoDeCarpeta
             Dim objXmlNode As XmlNode
             Dim strIdCarpetaDestino As String
 
-            objIDM = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, objSingleton.strIdCarpetaEcontent)
+            'objIDM = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, objSingleton.strIdCarpetaEcontent)
             objCarpeta = CType(objIDM, IDMObjects.IFnFolderDual)
             'se captura el listado de documentos en la carpeta
             objArrDocumento = objCarpeta.GetContents(idmFolderContent.idmFolderContentDocument)
@@ -56,7 +56,7 @@ Public Class ClassMonitoreoDeCarpeta
             objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Se finaliza el monitoreo de la carpeta.", ClassGeneradorLog.tipoLog.LogEjecucion)
             ' Intentar buscar carpeta de errores
             objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Monitoreo de la carpeta de errores", ClassGeneradorLog.tipoLog.LogEjecucion)
-            objIDM = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, objSingleton.strIdCarpetaErrorEcontent)
+            'objIDM = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, objSingleton.strIdCarpetaErrorEcontent)
             objCarpeta = CType(objIDM, IDMObjects.IFnFolderDual)
             'se captura el listado de documentos en la carpeta
             objArrDocumento = objCarpeta.GetContents(idmFolderContent.idmFolderContentDocument)
@@ -83,7 +83,7 @@ Public Class ClassMonitoreoDeCarpeta
             'End buscar carpeta de errores
 
             objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Cerrando sesion", ClassGeneradorLog.tipoLog.LogEjecucion)
-            objSingleton.objLibreria.Logoff()
+            'objSingleton.objLibreria.Logoff()
             objIDM = Nothing
             objCarpeta = Nothing
             objDocumento = Nothing

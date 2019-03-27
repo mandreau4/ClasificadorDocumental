@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<MonitorDeCarpetas>
+	<Servicio>
+		<rutaCompletaArchivoLog>C:\logMonitorCarpetas\archivoLog</rutaCompletaArchivoLog>
+		<rutaCompletaArchivoLogErrores>C:\logMonitorCarpetas\archivoLogErrores</rutaCompletaArchivoLogErrores>
+		<!--El intervalo de ejecucion debe estar en milisegundos-->
+		<Intervalo>30000</Intervalo>
+	</Servicio>
+
+	<Econtent>
+		<EcontentServidor>cs55</EcontentServidor>
+		<Econtentlibreria>test</Econtentlibreria>
+		<EcontentUser>Admin</EcontentUser>
+		<EcontentPWd>Colombia1</EcontentPWd>
+		<!--Id de la carpeta de econtent a ser monitoreada en el monitor de carpetas-->
+		<!--<idCarpeta>1109625062</idCarpeta>-->
+		<idCarpeta>1345845887</idCarpeta>
+		<!--Id de la carpeta de econtent donde se traslada el documento en caso de error-->
+		<!--<idCarpetaError>1110914159</idCarpetaError>-->
+		<idCarpetaError>1345846094</idCarpetaError>
+		<!--Id de la carpeta de econtent a partir de la cual se creara la estructura de almacenamiento del documento-->
+		<idCarpetaPadreAlmacenamiento>1109625042</idCarpetaPadreAlmacenamiento>
+	</Econtent>
+
+	<estructuraAlamacenamientoEcontent>
+		<documentClass valor="tipo de ejmplo 1">
+			<propiedad idmDocCustom="idmDocCustom04"></propiedad>
+			<propiedad idmDocCustom="idmDocCustom05"></propiedad>
+		</documentClass>
+		<documentClass valor="SantiagoTemp">
+			<!--tipo cliente-->
+			<propiedad idmDocCustom="idmDocCustom11" tieneSeguridad="TRUE">
+				<seguridad nombreGrupo="ger-" acceso="1" />
+				<seguridad nombreGrupo="grp-" acceso="1" />
+			</propiedad>
+			<!--Tipo de archivo-->
+			<propiedad idmDocCustom="idmDocCustom4" tieneSeguridad="FALSE"></propiedad>
+			<!--Tipo de negocio-->
+			<propiedad idmDocCustom="idmDocCustom13" tieneSeguridad="FALSE"></propiedad>
+		</documentClass>
+	</estructuraAlamacenamientoEcontent>
+
+</MonitorDeCarpetas>

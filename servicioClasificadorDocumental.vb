@@ -1,3 +1,4 @@
+Imports System.Configuration
 Imports System.ServiceProcess
 Imports ComponenteClasificadorDocumentos
 
@@ -32,7 +33,7 @@ Public Class INTeNT_ClasificadorDocumental
     End Sub
 
     ' The main entry point for the process
-    <MTAThread()> _
+    <MTAThread()>
     Shared Sub Main()
         Dim ServicesToRun() As System.ServiceProcess.ServiceBase
 
@@ -111,7 +112,8 @@ Public Class INTeNT_ClasificadorDocumental
             If activoServicio = True Then
                 'se crea el objetos con las varaibles globales
                 Dim rutaArchivoConfig As String
-                rutaArchivoConfig = System.Configuration.ConfigurationSettings.AppSettings.Get("config.xml")
+                leerParametrosInicialesConfiguracion()
+                rutaArchivoConfig = ConfigurationManager.AppSettings.Get("rutaArchivoConfig")
                 'objEventLog.WriteEntry("Creando classSingleton ", EventLogEntryType.Information)
                 objSingleton = New ClassSingleton(rutaArchivoConfig, rutaCompletaArchivoLog, rutaCompletaArchivoLogErrores, strEcontentServidor, strEcontentlibreria, strEcontentUser, strEcontentPWd, strIdCarpeta, strIdCarpetaError, idCarpetaPadreAlmacenamiento)
                 'objEventLog.WriteEntry("Done classSingleton ", EventLogEntryType.Information)
@@ -165,7 +167,7 @@ Public Class INTeNT_ClasificadorDocumental
         'en esta funcion se leen las variables globales del servicio, directamete desde el xml de configuracion
         Try
             Dim rutaArchivoConfig As String
-            rutaArchivoConfig = System.Configuration.ConfigurationSettings.AppSettings.Get("config.xml")
+            rutaArchivoConfig = ConfigurationManager.AppSettings.Get("rutaArchivoConfig")
             'objEventLog.WriteEntry("UPDATED: rutaArchivoConfig" & rutaArchivoConfig)
             Dim objXML As New ClassLecturaXML(rutaArchivoConfig)
 
@@ -180,7 +182,7 @@ Public Class INTeNT_ClasificadorDocumental
             'objEventLog.WriteEntry("UPDATED: strEcontentUser" & strEcontentUser)
 
             strEcontentPWd = CStr(objXML.leerValorNodo("MonitorDeCarpetas/Econtent/EcontentPWd", False))
-            
+
             strIdCarpeta = CStr(objXML.leerValorNodo("MonitorDeCarpetas/Econtent/idCarpeta", True))
             'objEventLog.WriteEntry("UPDATED: strIdCarpeta" & strIdCarpeta)
 

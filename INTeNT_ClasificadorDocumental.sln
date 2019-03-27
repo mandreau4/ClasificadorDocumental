@@ -1,7 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28714.193
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "INTeNT_ClasificadorDocumental", "INTeNT_ClasificadorDocumental.vbproj", "{B2F38244-21FC-4EFE-BAC8-65B3ED45FABD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Clasificador.Test", "..\Clasificador.Test\Clasificador.Test.vbproj", "{CBE8B600-E154-44DE-AB78-B03B065753EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +17,15 @@ Global
 		{B2F38244-21FC-4EFE-BAC8-65B3ED45FABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2F38244-21FC-4EFE-BAC8-65B3ED45FABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2F38244-21FC-4EFE-BAC8-65B3ED45FABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE8B600-E154-44DE-AB78-B03B065753EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE8B600-E154-44DE-AB78-B03B065753EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE8B600-E154-44DE-AB78-B03B065753EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE8B600-E154-44DE-AB78-B03B065753EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9FE78DB-6EC4-4433-87A3-6DBF0F8EBC05}
 	EndGlobalSection
 EndGlobal

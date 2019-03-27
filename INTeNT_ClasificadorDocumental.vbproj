@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>8.0.50727</ProductVersion>
@@ -30,7 +30,7 @@
     <MyType>Console</MyType>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OldToolsVersion>2.0</OldToolsVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>c:/</PublishUrl>
@@ -70,6 +70,7 @@
     <DebugType>full</DebugType>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\</OutputPath>
@@ -91,6 +92,7 @@
     <DebugType>none</DebugType>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>AB46EAB8CF127EE0384B5FD367B419A009623200</ManifestCertificateThumbprint>
@@ -102,7 +104,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.AdminAPI">
@@ -117,15 +119,32 @@
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.4.5.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration.Install">
       <Name>System.Configuration.Install</Name>
     </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
     </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Permissions.4.5.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="System.ServiceProcess">
       <Name>System.ServiceProcess</Name>
     </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
@@ -189,6 +208,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="INTeNT_ClasificadorDocumental_TemporaryKey.pfx" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
