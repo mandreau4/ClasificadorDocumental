@@ -1,0 +1,46 @@
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.exe
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.pdb
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.xml
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\Interop.AdminAPI.dll
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\Interop.IDMObjects.dll
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\Interop.ResourcesServices.dll
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.vbproj.ResolveComReference.cache
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.ProjectInstaller.resources
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.INTeNT_ClasificadorDocumental.resources
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\ResGen.read.1.tlog
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\ResGen.write.1.tlog
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.exe
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.xml
+C:\Users\jvargas\Desktop\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.pdb
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.exe
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.pdb
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.xml
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\Interop.AdminAPI.dll
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\Interop.IDMObjects.dll
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\Interop.ResourcesServices.dll
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.vbproj.ResolveComReference.cache
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.ProjectInstaller.resources
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.INTeNT_ClasificadorDocumental.resources
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.vbproj.GenerateResource.Cache
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.exe
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.xml
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.pdb
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.exe.manifest
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.application
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.exe.manifest
+D:\jorge\intent\Clasificador documental V 006.2\Clasificador documental V 006\srvoClasifDoc\slnClasificadorDocumental\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.application
+C:\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.exe
+C:\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.pdb
+C:\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.exe.config
+C:\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.exe.manifest
+C:\INTeNT_ClasificadorDocumental\bin\INTeNT_ClasificadorDocumental.application
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.vbproj.ResolveComReference.cache
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.ProjectInstaller.resources
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.INTeNT_ClasificadorDocumental.resources
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.vbproj.GenerateResource.Cache
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.exe.manifest
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.application
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.exe
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.xml
+C:\INTeNT_ClasificadorDocumental\obj\Debug\INTeNT_ClasificadorDocumental.pdb
