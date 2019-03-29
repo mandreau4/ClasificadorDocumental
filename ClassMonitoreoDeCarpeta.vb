@@ -1,6 +1,7 @@
 Imports IDMObjects
 Imports System
 Imports System.IO
+Imports System.Threading.Tasks
 Imports System.Xml
 
 Public Class ClassMonitoreoDeCarpeta
@@ -16,8 +17,6 @@ Public Class ClassMonitoreoDeCarpeta
             Dim objCarpeta As New IDMObjects.Folder
             Dim objDocumento As New IDMObjects.Document
             Dim objArrDocumento As New IDMObjects.ObjectSet
-            Dim objxmlLista As XmlNodeList
-            Dim objXmlNode As XmlNode
             Dim strIdCarpetaDestino As String
 
             'objIDM = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, objSingleton.strIdCarpetaEcontent)
@@ -27,6 +26,10 @@ Public Class ClassMonitoreoDeCarpeta
             objSingleton.objLog.grabarLogEnArchivoPlano("monitorearCarpetaEcontent", "Se realizo la carga de la carpeta a ser monitoreada.", ClassGeneradorLog.tipoLog.LogEjecucion)
 
             Dim objGeneralEContent As New ClassGeneralEContent
+            'Dim myOptions As ParallelOptions = New ParallelOptions()
+            'Parallel.ForEach(objArrDocumento, myOptions, Sub(currentRow, state)
+            '                                                 ProcessRowParallel(currentRow, state)
+            '                                             End Sub)
 
             For Each objIDM In objArrDocumento
                 objDocumento = CType(objIDM, IDMObjects.IFnDocumentDual)
@@ -111,7 +114,6 @@ Public Class ClassMonitoreoDeCarpeta
         Dim objXmlListSeguridad As XmlNodeList
         Dim objItemSeguridad As XmlNode
 
-        Dim strNombrePropiedad As String
         Dim strValorPropiedad As String
         Dim strValorEsperadoPropiedad As String
         Dim strCarpetaPadre As String
@@ -121,13 +123,11 @@ Public Class ClassMonitoreoDeCarpeta
         Dim strNivelAcceso As String
         Dim intNivelAcceso As Integer
 
-        Dim objPermisosGrupo As IDMObjects.Permission
-
         'cadena de caracteres que tiene el valor "TRUE" cuando la carpeta debe ser creada con grupos de seguridad y se le debe asignar al documento dicha seguridad
         Dim tieneSeguridad As String
         'cadena de caracteres separada por coma "," que indica que id de carpetas deberan ser asignados como seguridad al documento.
         Dim strVectorIdCarpetasConSeguridad As String
-        Dim vectorIdCarpetas
+        Dim vectorIdCarpetas As String()
         Dim contador As Integer
 
         Dim valorPropiedadFecha As String
