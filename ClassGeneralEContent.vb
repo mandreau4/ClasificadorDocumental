@@ -13,14 +13,14 @@ Public Class ClassGeneralEContent
         Dim aFolderOrigen As Object
         Try
             'Instancia del folder Destino
-            'aFolderDestino = objSinlgeton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, idCarpetaDestino)
+            aFolderDestino = objSinlgeton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, idCarpetaDestino)
             aIdmFolderDestino = CType(aFolderDestino, IDMObjects.IFnFolderDual)
             aIdmFolderDestino.File(objDocument)
 
             For Each FolderAlmacenado In objDocument.FoldersFiledIn
                 If (FolderAlmacenado.id = idCarpetaOrigen) Then
                     'Instancia del folder Origen
-                    'aFolderOrigen = objSinlgeton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, idCarpetaOrigen)
+                    aFolderOrigen = objSinlgeton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, idCarpetaOrigen)
                     aIdmFolderOrigen = CType(aFolderOrigen, IDMObjects.IFnFolderDual)
                     aIdmFolderOrigen.Unfile(objDocument)
                 End If
@@ -55,9 +55,9 @@ Public Class ClassGeneralEContent
             If Not existeCarpeta(Trim(strNombreCarpeta), strIdCarpetaPadre, strIdFolderFinal, objSingleton) Then
                 If Len(strIdCarpetaPadre) = 0 Then
                     'se almacena en la raiz
-                    'objFolder = objSingleton.objLibreria.CreateObject(idmObjectType.idmObjTypeFolder, "")
+                    objFolder = objSingleton.objLibreria.CreateObject(idmObjectType.idmObjTypeFolder, "")
                 Else
-                    'aIdmFolderPadre = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdCarpetaPadre)
+                    aIdmFolderPadre = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdCarpetaPadre)
                     aIdmFolderPadre = CType(aIdmFolderPadre, IDMObjects.IFnFolderDual)
                     objFolder = aIdmFolderPadre.CreateSubFolder(idmObjectType.idmObjTypeFolder, "")
                 End If
@@ -95,11 +95,11 @@ Public Class ClassGeneralEContent
 
             If Len(strIdFolderPadre) = 0 Then
                 'como no se paso el id Del padre entonces se busca en la raiz de la libreria
-                'objFoldersColl = objSingleton.objLibreria.TopFolders()
+                objFoldersColl = objSingleton.objLibreria.TopFolders()
 
             Else
                 'se procede a cargar la carpeta padre
-                'objFolderPadre = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdFolderPadre)
+                objFolderPadre = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdFolderPadre)
                 objFolderPadre = CType(objFolderPadre, IDMObjects.IFnFolderDual)
                 objFoldersColl = objFolderPadre.SubFolders
             End If
@@ -161,7 +161,7 @@ Public Class ClassGeneralEContent
         Dim permiso As Permission
 
         Try
-            'aIdmFolder = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdCarpeta)
+            aIdmFolder = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdCarpeta)
             aIdmFolder = CType(aIdmFolder, IDMObjects.IFnFolderDual)
 
             idmPermisos = aIdmFolder.Permissions
@@ -189,7 +189,7 @@ Public Class ClassGeneralEContent
         Dim aIdmFolder As IDMObjects.Folder
         Try
             m_CreateGroup(strNombreGrupo, objSingleton)
-            'aIdmFolder = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdCarpeta)
+            aIdmFolder = objSingleton.objLibreria.GetObject(idmObjectType.idmObjTypeFolder, strIdCarpeta)
             aIdmFolder = CType(aIdmFolder, IDMObjects.IFnFolderDual)
 
             aIdmFolder.Permissions.AddByName(strNombreGrupo, idmObjectType.idmObjTypeGroup, nivelAcceso)
@@ -253,7 +253,6 @@ Public Class ClassGeneralEContent
 
         'Declaraciones para manipulacion de propiedades del grupo como tal
         Dim iIndex As Integer
-        Dim sPropVal As String
         Dim mzoPropertyGroup As mezProperty
 
         Dim sErrInfo As String

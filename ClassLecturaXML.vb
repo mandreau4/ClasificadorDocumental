@@ -1,8 +1,6 @@
 Imports System
 Imports System.IO
 Imports System.Xml
-Imports System.Linq
-
 
 Public Class ClassLecturaXML
     Public objXmlDocumento As New XmlDocument
@@ -27,6 +25,7 @@ Public Class ClassLecturaXML
         'la ruta es de la forma "nodo/nodoNivel2/nodoNivel3", en el ejemplo leeria el valor del xml
         'entrando hasta el nivel 3. EJEMPLO:
         '<nodo><nodoNivel2><nodoNivel3>VALOR</nodoNivel2></nodoNivel2></nodo>
+
         Try
             'se procede a leer el valor del nodo
             leerValorNodo = objXmlDocumento.SelectSingleNode(strRutaNodo).InnerText
@@ -34,6 +33,7 @@ Public Class ClassLecturaXML
             If esRequerido And Len(leerValorNodo) = 0 Then
                 Throw New Exception("El innerText de la variable '" & strRutaNodo & "' no puede ser vacio")
             End If
+
 
         Catch err As Exception
             leerValorNodo = ""
